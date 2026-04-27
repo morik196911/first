@@ -2,7 +2,7 @@
 namespace App\Controllers;
 use App\Core\Controller;
 
-class MainControllers extends Controller {
+class MainController extends Controller {
 
   public function getContent() {
     
