@@ -1,0 +1,19 @@
+{
+    "name": "morik1969/first",
+    "description": "project",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "morik196911",
+            "email": "marselina1969.1969@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
