@@ -1,0 +1,39 @@
+.category {
+    padding: 10px;
+}
+
+.category__text  {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   column-gap: 5px;
+   row-gap: 10px;
+}
+
+.category__title {
+    text-align: center;
+}
+
+.category__border {
+    margin: 25px auto;
+    inline-size: 80%;
+    border-block-end: 1px solid #ff0000;
+}
+
+.card {
+    max-inline-size: 350px;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card__body {
+    padding: 5px;
+}
+
+.card__price span {
+    color: red;
+    font-weight: 700;
+    font-size: 1.2rem;
+}

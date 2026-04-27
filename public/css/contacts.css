@@ -1,0 +1,19 @@
+
+.contacts {
+    padding: 10px;
+}
+
+.contacts__text p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.contacts__title {
+    text-align: center;
+}
+
+.contacts__border {
+    margin: 25px auto;
+    inline-size: 80%;
+    border-block-end: 1px solid #ff0000;
+}

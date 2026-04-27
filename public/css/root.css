@@ -1,0 +1,21 @@
+
+:root {
+  --gap-small: 10px;
+  --gap-medium: 20px;
+  --gap-large: 40px;
+  --wrapper-border: #000000;
+  --logo-color: #ff0000;
+  --menu-color: #ec49ec;
+  --menu-hover:#f3d5b5;
+  --message-color: #e717e7;
+  --mv-background: #f8f9fa;
+  --mv-hover: #e9ecef;
+  --mv-link: rgb(36, 33, 33);
+  --mv-link-hover: #f3d5b5;
+  --f-background: #ebeaea;
+  --social-link: #4b1313;
+  --social-link-hover: #af7070;
+  --info-color: #e717e7;
+  --info-hover: #a06184;
+  --email-form: #ddd;
+}

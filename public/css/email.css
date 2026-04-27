@@ -1,0 +1,53 @@
+
+.email {
+    padding: 10px;
+}
+
+.email__title {
+    text-align: center;
+}
+
+.email__border {
+    margin: 25px auto;
+    inline-size: 80%;
+    border-block-end: 1px solid #ff0000;
+}
+
+form {
+  max-inline-size: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--email-form, #ddd);
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-block-end: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-block-end: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
