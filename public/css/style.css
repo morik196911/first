@@ -236,6 +236,10 @@ a:hover {
     font-size: 1rem;
 }
 
+.prava {
+    text-align: center;
+}
+
 
 /* Для мобильных устройств (до 576px) */
 @media (max-width: 576px) {

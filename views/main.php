@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/private.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/email.css">
-    <title>Main page</title>
+    <title><?= $this->title ?></title>
 </head>
 
 <body>
@@ -76,7 +76,7 @@
                 </nav>
             </div><!--saidbar-->
             <div class="col-lg-9 col-sm-12 base">
-                <?php include __DIR__ . $this->getContent . '.php' ?>
+                <?php include __DIR__ . $this->content . '.php' ?>
             </div><!--col-lg-8 col-sm-8 -->
         </div><!--row content-->
 

@@ -16,22 +16,15 @@
 
 
      <div class="row main__images-wrapper">
+    <?php foreach($this->images as $item): ?>
          <div class="col-md-4">
+           
              <img class="main__foto img-fluid mx-auto d-block rounded"
-                 src="./images/web/magazin.jpg" alt="shop">
+                 src="<?= $item['img']?>" alt="<?= $item['title'] ?>">
          </div>
-         <div class="col-md-4">
-             <img class="main__foto img-fluid mx-auto d-block rounded"
-                 src="./images/web/magazin.jpg" alt="shop">
-         </div>
-         <div class="col-md-4">
-             <img class="main__foto img-fluid mx-auto d-block rounded"
-                 src="./images/web/magazin.jpg" alt="shop">
-         </div>
-         <div class="col-md-4">
-             <img class="main__foto img-fluid mx-auto d-block rounded"
-                 src="./images/web/magazin.jpg" alt="shop">
-         </div>
+      <?php endforeach ; ?>
+       
+       
      </div><!--row main__images-wrapper-->
 
  </div><!--main-->
