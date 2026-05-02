@@ -26,17 +26,17 @@
             </div>
             <div class=" col-sm-12 col-lg-8 menu ">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="">Главная</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Доставка</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Help</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">Help</a></li>
+                    <?php foreach($this->topmenu as $item): ?>
+                    <li class="menu__item">
+                        <a class="menu__link" href="<?= $item['link'] ?>"><?= $item['title'] ?></a></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
             <div class="col-12 message">
                 <div class="message__number">89270160536 / 8(84656)27007</div>
-                <p class="message__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Molestiae, nostrum?</p>
+                <p class="message__info">
+                     Блиайшая доставка товара до 10 мая 
+             </p>
             </div>
         </div><!--header-->
         <div class="row content">
@@ -44,32 +44,43 @@
                 <nav class="menu-vertical">
                     <ul class="menu-vertical__list">
                         <li class="menu-vertical__item">
-                            <button class="menu-vertical__toggle">Корпус</button>
+                            <button class="menu-vertical__toggle">Корпусная мебель</button>
                             <ul class="menu-vertical__sublist">
-                                <li><a href="" class="menu-vertical__link">Шкафы</a></li>
-                                <li><a href="" class="menu-vertical__link">Прихолдд</a></li>
-                                <li><a href="" class="menu-vertical__link">Столы</a></li>
-                                <li><a href="" class="menu-vertical__link">Комоды</a></li>
+                                <?php foreach($this->corpus as $item): ?>
+                                <li><a href="<?= $item['link'] ?>"
+                                 class="menu-vertical__link"><?= $item['title'] ?></a></li>
+                                <?php endforeach ?>
                             </ul>
                         </li>
 
                         <li class="menu-vertical__item">
-                            <button class="menu-vertical__toggle">Корпус</button>
+                            <button class="menu-vertical__toggle">Мягкая мебель</button>
                             <ul class="menu-vertical__sublist">
-                                <li><a href="" class="menu-vertical__link">Шкафы</a></li>
-                                <li><a href="" class="menu-vertical__link">Прихолдд</a></li>
-                                <li><a href="" class="menu-vertical__link">Столы</a></li>
-                                <li><a href="" class="menu-vertical__link">Комоды</a></li>
+                                <?php foreach($this->soft as $item): ?>
+                                <li><a href="<?= $item['link'] ?>" 
+                                class="menu-vertical__link"><?= $item['title'] ?></a></li>
+                                 <?php endforeach ?>
                             </ul>
                         </li>
 
                         <li class="menu-vertical__item">
-                            <button class="menu-vertical__toggle">Корпус</button>
+                            <button class="menu-vertical__toggle">Хром мебель</button>
                             <ul class="menu-vertical__sublist">
-                                <li><a href="" class="menu-vertical__link">Шкафы</a></li>
-                                <li><a href="" class="menu-vertical__link">Прихолдд</a></li>
-                                <li><a href="" class="menu-vertical__link">Столы</a></li>
-                                <li><a href="" class="menu-vertical__link">Комоды</a></li>
+                                 <?php foreach($this->hrom as $item): ?>
+                                <li><a href="<?= $item['link'] ?>" 
+                                class="menu-vertical__link"><?= $item['title'] ?></a></li>
+                                 <?php endforeach ?>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="menu-vertical__item">
+                            <button class="menu-vertical__toggle">Матрасы</button>
+                            <ul class="menu-vertical__sublist">
+                                 <?php foreach($this->matrasses as $item): ?>
+                                <li><a href="<?= $item['link'] ?>" 
+                                class="menu-vertical__link"><?= $item['title'] ?></a></li>
+                                 <?php endforeach ?>
                             </ul>
                         </li>
                     </ul>

@@ -25,10 +25,20 @@ abstract class Controller {
     $this->data = $this->format->xss($_REQUEST);
     $this->validate = new Validate();
     $this->model = new Controller_model();
+    
+    $topmenu = $this->model->getAllMenu('topmenu');
+    $corpus = $this->model->getAllMenu('category_corpus');
+    $soft = $this->model->getAllMenu('category_soft');
+    $hrom = $this->model->getAllMenu('category_hrom');
+    $matrasses = $this->model->getAllMenu('category_matrasses');
 
     $this->template->set('title', $this->title);
     $this->template->set('content', $this->getContent());
-    $this->template->set('topmenu', $this->model->getAllMenu('topmenu'));
+    $this->template->set('topmenu', $topmenu);
+    $this->template->set('corpus', $corpus);
+    $this->template->set('soft', $soft);
+    $this->template->set('hrom', $hrom);
+    $this->template->set('matrasses', $matrasses);
     
     $this->template->display('main');
    }

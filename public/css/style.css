@@ -65,6 +65,12 @@ a:hover {
 
 .message__number {
     text-align: center;
+    color: var(--message-info, green);
+}
+
+.message__info {
+    text-align: center;
+    color: var(--message-info, green);
 }
 
 .content {
