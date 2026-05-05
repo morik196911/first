@@ -13,10 +13,15 @@ class Route
       preg_match($pattern, $url, $matches);
       if (!empty($matches)) {
         $flag = true;
+        //print_r($matches);
         break;
       }
     endforeach;
-    
+         if(!$flag) {
+            http_response_code(404);
+            echo 'Page not found';
+            return;
+        }
     unset($matches[0]);
 
     $controllerName = $controllerAndAction[0];

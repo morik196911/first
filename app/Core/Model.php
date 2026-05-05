@@ -19,12 +19,12 @@ abstract class Model {
 		return $this->db->select($query);
 	}
 
-		/*выбрать всё по id*/
-	/*protected function getAllId($id, $v = true) {
-		$query = "SELECT * FROM ".$this->table_name." 
-		 WHERE `visible` = '$v' AND `id`= '$id' ";
-		return $this->db->select($query);
-	}*/
+		/*выбрать всё по значению поля*/
+	protected function getAllFieldName($table_name, $field, $field_name, $v = true) {
+		$query = "SELECT * FROM ".$table_name." 
+		 WHERE `visible` = '$v' AND `$field`= '$field_name' ";
+		return $this->db->selectRow($query);
+	}
    /* Выбрать по своему названию таблицы*/
 	/*protected function getAllTableName($table_name, $v = true) {
 	 	$query = "SELECT * FROM ".$table_name." WHERE `visible` = '$v' ";

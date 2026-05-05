@@ -13,5 +13,9 @@ class Controller_model extends Model {
     public function getAllMenu($table_name) {
         return $this->getAll($table_name);
     }
+
+    public function getAllProductForField($table_name, $field, $field_name) {
+        return $this->getAllFieldName($table_name, $field , $field_name);
+    }
    
 }

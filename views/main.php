@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/root.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/category.css">
-    <link rel="stylesheet" href="css/private.css">
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/email.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/contacts.css">
+    <link rel="stylesheet" href="/css/category.css">
+    <link rel="stylesheet" href="/css/private.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/email.css">
     <title><?= $this->title ?></title>
 </head>
 
@@ -47,7 +47,7 @@
                             <button class="menu-vertical__toggle">Корпусная мебель</button>
                             <ul class="menu-vertical__sublist">
                                 <?php foreach($this->corpus as $item): ?>
-                                <li><a href="<?= $item['link'] ?>"
+                                <li><a href="<?php __DIR__ ?>/corpus/<?= $item['link'] ?>"
                                  class="menu-vertical__link"><?= $item['title'] ?></a></li>
                                 <?php endforeach ?>
                             </ul>
@@ -57,7 +57,7 @@
                             <button class="menu-vertical__toggle">Мягкая мебель</button>
                             <ul class="menu-vertical__sublist">
                                 <?php foreach($this->soft as $item): ?>
-                                <li><a href="<?= $item['link'] ?>" 
+                                <li><a href="<?php __DIR__ ?>/soft/<?= $item['link'] ?>" 
                                 class="menu-vertical__link"><?= $item['title'] ?></a></li>
                                  <?php endforeach ?>
                             </ul>
@@ -67,7 +67,7 @@
                             <button class="menu-vertical__toggle">Хром мебель</button>
                             <ul class="menu-vertical__sublist">
                                  <?php foreach($this->hrom as $item): ?>
-                                <li><a href="<?= $item['link'] ?>" 
+                                <li><a href="<?php __DIR__ ?>/hrom/<?= $item['link'] ?>" 
                                 class="menu-vertical__link"><?= $item['title'] ?></a></li>
                                  <?php endforeach ?>
                             </ul>
@@ -78,7 +78,7 @@
                             <button class="menu-vertical__toggle">Матрасы</button>
                             <ul class="menu-vertical__sublist">
                                  <?php foreach($this->matrasses as $item): ?>
-                                <li><a href="<?= $item['link'] ?>" 
+                                <li><a href="<?php __DIR__ ?>/matrasses/<?= $item['link'] ?>" 
                                 class="menu-vertical__link"><?= $item['title'] ?></a></li>
                                  <?php endforeach ?>
                             </ul>
@@ -95,13 +95,13 @@
             <div class="col-lg-6 col-12 info">
                 <ul class="info__list">
                     <li class="info__item">
-                        <a class="info__link" href="">Политика приватности</a>
+                        <a class="info__link" href="private">Политика приватности</a>
                     </li>
                     <li class="info__item">
-                        <a class="info__link" href="">Написать email</a>
+                        <a class="info__link" href="email">Написать email</a>
                     </li>
                     <li class="info__item">
-                        <a class="info__link" href="">Помощь</a>
+                        <a class="info__link" href="help">Помощь</a>
                     </li>
                 </ul>
             </div>
@@ -135,9 +135,9 @@
     </div><!--wrapper-->
 
 
-    <script src="js/jquery-4.0.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/myscript.js"></script>
+    <script src="/js/jquery-4.0.0.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/myscript.js"></script>
 </body>
 
 </html>
