@@ -20,9 +20,9 @@ abstract class Model {
 	}
 
 		/*выбрать всё по значению поля*/
-	protected function getAllFieldName($table_name, $field, $field_name, $v = true) {
+	protected function getAllFieldName($table_name, $field, $field_value, $v = true) {
 		$query = "SELECT * FROM ".$table_name." 
-		 WHERE `visible` = '$v' AND `$field`= '$field_name' ";
+		 WHERE `visible` = '$v' AND `$field`= '$field_value' ";
 		return $this->db->selectRow($query);
 	}
    /* Выбрать по своему названию таблицы*/

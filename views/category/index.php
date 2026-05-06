@@ -11,7 +11,8 @@
                           <p class="card__text"><?= $item['text'] ?></p>
                           <p class="card__price">Цена <span><?= $item['price'] ?></span></p>
                           <p class="card__link">
-            <a href="<?= $this->category_link ?>/<?= $item['id'] ?>">Подробнее</a></p>
+            <a href="/product/<?= $this->subcategory_link ?>/<?= $item['id'] ?>">Подробнее</a>
+</p>
                       </div><!--card-body-->
                   </div><!--card-->
         <?php endforeach ?>
