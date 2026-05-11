@@ -5,7 +5,7 @@
               <div class="category__text">
         <?php foreach($this->products as $item): ?>
                   <div class="card ">
-                      <img src="images/web/magazin_new1.jpg" class="card__img" alt="...">
+                      <img src="<?= explode(',', $item['images'])[0] ?>" class="card__img" alt="...">
                       <div class="card__body">
                           <h4 class="card__title"> <?= $item['title'] ?> </h4>
                           <p class="card__text"><?= $item['text'] ?></p>

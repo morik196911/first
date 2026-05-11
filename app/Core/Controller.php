@@ -23,8 +23,8 @@ abstract class Controller {
     $this->template = new Template(__DIR__ . '/../../views/');
     $this->format = new Format();
     $this->data = $this->format->xss($_REQUEST);
-    $this->validate = new Validate();
     $this->model = new Controller_model();
+    $this->validate = new Validate();
     
     $topmenu = $this->model->getAllMenu('topmenu');
     $corpus = $this->model->getAllMenu('category_corpus');

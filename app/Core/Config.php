@@ -7,5 +7,5 @@ class Config {
     static public $db_user = "root";
     static public $db_password = "";
     static public $db_name = "mymebel";
-
+    static public $title_array = ['corpus', 'hrom', 'matrasses', 'soft', 'computerchairs'];
 }

@@ -20,9 +20,18 @@ class ProductController extends Controller {
         $product = $this->model->getAllProductForField("products_".$subcategory_link ,"id",$product_id);
 
         if ($product) {
+            
             // Передаём данные в шаблон
             $this->template->set('title', $product['title']);
             $this->template->set('text', $product['text']);
+            $this->template->set('global_category', $_SESSION['global_category'] ?? "");
+            $this->template->set('category_sub', $_SESSION['category_sub'] ?? "");
+            $this->template->set('global_category_link', $_SESSION['global_category_english']);
+            $this->template->set('subcategory_link', $subcategory_link);
+            /* массив фото*/
+            $images_array = explode(',', $product['images']);
+            $this->template->set('images', $images_array);
+            $this->template->set('price', $product['price']);
 
             return "/product/index";
         } else {

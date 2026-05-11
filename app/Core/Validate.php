@@ -7,4 +7,8 @@ class Validate {
         print_r($data);
         echo "</pre>";
     }
+
+    public function checkInArray() {
+        
+    }
 }

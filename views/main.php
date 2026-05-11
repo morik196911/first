@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="/css/private.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/email.css">
+     <link rel="stylesheet" href="/fancyBox-3.0/jquery.fancybox.css">
     <title><?= $this->title ?></title>
+
 </head>
 
 <body>
@@ -138,6 +140,7 @@
     <script src="/js/jquery-4.0.0.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/myscript.js"></script>
+    <script src="/fancyBox-3.0/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
